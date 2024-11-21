@@ -57,6 +57,15 @@
   fill: #000;
 }
 
+.spin {
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 @keyframes spin {
   from { transform: rotate(360deg); }
   to { transform: rotate(0deg); }
