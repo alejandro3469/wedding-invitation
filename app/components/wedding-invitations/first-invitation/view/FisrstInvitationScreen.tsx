@@ -32,3 +32,4 @@ const FirstInvitationScreen = () => {
 };
 
 export default FirstInvitationScreen;
+ 
