@@ -26,7 +26,7 @@ const FirstInvitationScreen = () => {
   };
   return (
     <>
-      <InvitationBanner details={weddingDetails} />
+      <InvitationBanner/>
     </>
   );
 };
