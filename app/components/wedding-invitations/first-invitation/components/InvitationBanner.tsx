@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import styles from '../styles/InvitationBanner.module.css';
 import {Karla, Montserrat, Montserrat_Alternates } from "next/font/google";
-import Slider from './Slider';
 
 import localFont from 'next/font/local';
 
