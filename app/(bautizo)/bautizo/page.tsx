@@ -6,6 +6,9 @@ const Component = () => {
   return (
     <div>
         <FirstInvitationScreen />
+        <div>
+            Test
+        </div>
     </div>
   );
 };
