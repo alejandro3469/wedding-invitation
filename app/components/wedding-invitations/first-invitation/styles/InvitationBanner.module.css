@@ -38,18 +38,22 @@
   align-items: center;
   justify-content: center;
 }
+
 .image {
   position: relative;
   filter: grayscale(80%);
 }
+
 .large_image {
   width: 280px;
   height: 420px;
 }
+
 .small_image {
   display: none;
 }
-.image_overlay{
+
+.image_overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -87,6 +91,19 @@
   line-height: 1.6em;
 }
 
+.parallaxContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallaxImage {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.1s ease-out;
+}
+
 @media (max-width: 600px) {
   .banner {
     flex-direction: column;
@@ -100,23 +117,26 @@
   .banner_details {
     width: 240px;
   }
-  
+
   .small_image {
     width: 240px;
     height: 360px;
     display: block;
   }
+
   .large_image {
     display: none;
   }
-  .image_overlay{
+
+  .image_overlay {
     width: 240px;
     height: 360px;
   }
-  
+
   .text_container {
     width: 272px;
   }
+
   .text_overlay {
     font-size: calc(2vw + 2.4em);
   }
