@@ -1,0 +1,60 @@
+/*VARIABLES*/
+
+/*PHOTO-SECTION*/
+.bannerContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bannerImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bannerImage :global(img) {
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+
+/*INITIALS SECTION*/
+.initialsSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background-color: #E0E0E0;
+}
+
+.initials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  /*font-weight: bold;*/
+  color: #333; /* Adjust the text color as needed */
+  /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
+  transform: rotate(-45deg); /* Rotate the entire container */
+}
+
+.letter, .ampersand {
+  margin: 10px 0;
+  transform: rotate(45deg); /* Rotate the individual letters back to normal */
+  font-family: var(--font-great-vibes), cursive; /* Apply the Great Vibes font */
+  color: #3A6EA5;
+}
+.ampersand {
+  font-size: 2rem;
+}
