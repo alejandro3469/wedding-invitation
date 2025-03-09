@@ -60,24 +60,35 @@ const InvitationBanner = () => {
                         />
                     </div>
                 </div>
+
+
             </div>
 
+
             <section className={`${styles.initialsSection2}`}>
-                <div className={`${styles.initialsSection} ${greatVibes.variable}`}>
-                    <div className={styles.initials}>
-                        <span className={styles.letter}>C</span>
-                        <span className={styles.ampersand}>&</span>
-                        <span className={styles.letter}>V</span>
+                <section className={`${styles.initialsSection3}`}>
+                    <div className={`${styles.initialsSection} ${greatVibes.variable}`}>
+                        <div className={styles.initials}>
+                            <span className={styles.letter}>C</span>
+                            <span className={styles.ampersand}>&</span>
+                            <span className={styles.letter}>V</span>
+                        </div>
                     </div>
+                </section>
+                <div className={`${styles.initials2} ${lora.variable}`}>
+                    <p className={styles.accent}>
+                        {
+                            "\"En un mundo lleno de momentos fugaces, " +
+                            "hemos encontrado un amor que perdura\""
+                        }
+                    </p>
+                    <p className={styles.secondary}>
+                        {
+                            "Queremos compartir con ustedes este momento tan especial " +
+                            "y celebrar juntos la unión de nuestras vidas\""
+                        }
+                    </p>
                 </div>
-                <p className={`${styles.initials2} ${lora.variable}`}>
-                    {
-                        "\"En un mundo lleno de momentos fugaces, " +
-                        "hemos encontrado un amor que perdura.\n" +
-                        "Queremos compartir con ustedes este momento tan especial " +
-                        "y celebrar juntos la unión de nuestras vidas\""
-                    }
-                </p>
             </section>
         </>
     );
