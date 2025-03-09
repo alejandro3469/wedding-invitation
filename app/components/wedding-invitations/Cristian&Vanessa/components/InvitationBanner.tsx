@@ -18,6 +18,17 @@ const greatVibes = localFont({
     variable: '--font-great-vibes',
 });
 
+const lora = localFont({
+    src: [
+        {
+            path: '/Lora-Regular.ttf',
+            weight: '400',
+            style: 'normal',
+        },
+    ],
+    variable: '--font-lora',
+});
+
 
 const InvitationBanner = () => {
 
@@ -51,13 +62,23 @@ const InvitationBanner = () => {
                 </div>
             </div>
 
-            <div className={`${styles.initialsSection} ${greatVibes.variable}`}>
-                <div className={styles.initials}>
-                    <span className={styles.letter}>C</span>
-                    <span className={styles.ampersand}>&</span>
-                    <span className={styles.letter}>V</span>
+            <section className={`${styles.initialsSection2}`}>
+                <div className={`${styles.initialsSection} ${greatVibes.variable}`}>
+                    <div className={styles.initials}>
+                        <span className={styles.letter}>C</span>
+                        <span className={styles.ampersand}>&</span>
+                        <span className={styles.letter}>V</span>
+                    </div>
                 </div>
-            </div>
+                <p className={`${styles.initials2} ${lora.variable}`}>
+                    {
+                        "\"En un mundo lleno de momentos fugaces, " +
+                        "hemos encontrado un amor que perdura.\n" +
+                        "Queremos compartir con ustedes este momento tan especial " +
+                        "y celebrar juntos la unión de nuestras vidas\""
+                    }
+                </p>
+            </section>
         </>
     );
 };
