@@ -1,6 +1,6 @@
 import React from 'react';
-import Banner from '../components/InvitationBanner';
-import InvitationBanner from '../components/InvitationBanner';
+import Banner from '../components/Banner';
+import Countdown from "@/app/components/wedding-invitations/Cristian&Vanessa/components/Countdown";
 
 const InvitationScreen = () => {
   const weddingDetails = {
@@ -26,7 +26,7 @@ const InvitationScreen = () => {
   };
   return (
     <>
-      <InvitationBanner/>
+      <Banner/>
     </>
   );
 };

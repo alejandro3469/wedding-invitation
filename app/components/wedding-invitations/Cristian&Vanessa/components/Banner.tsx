@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import styles from '../styles/InvitationBanner.module.css';
+import styles from '../styles/Banner.module.css';
 import { useEffect } from 'react';
 
 import localFont from 'next/font/local';
@@ -30,7 +30,7 @@ const lora = localFont({
 });
 
 
-const InvitationBanner = () => {
+const Banner = () => {
 
     // invitations-files/Cristian&Vanessa/IMG_0498.jpeg
 
@@ -65,9 +65,9 @@ const InvitationBanner = () => {
             </div>
 
 
-            <section className={`${styles.initialsSection2}`}>
-                <section className={`${styles.initialsSection3}`}>
-                    <div className={`${styles.initialsSection} ${greatVibes.variable}`}>
+            <section className={`${styles.initialsSectionContainer}`}>
+                <section className={`${styles.initialsContainer}`}>
+                    <div className={`${styles.initialsLetters} ${greatVibes.variable}`}>
                         <div className={styles.initials}>
                             <span className={styles.letter}>C</span>
                             <span className={styles.ampersand}>&</span>
@@ -75,7 +75,7 @@ const InvitationBanner = () => {
                         </div>
                     </div>
                 </section>
-                <div className={`${styles.initials2} ${lora.variable}`}>
+                <div className={`${styles.quoteText} ${lora.variable}`}>
                     <p className={styles.accent}>
                         {
                             "\"En un mundo lleno de momentos fugaces, " +
@@ -90,8 +90,29 @@ const InvitationBanner = () => {
                     </p>
                 </div>
             </section>
+
+
+            <section className={`${styles.initialsSectionContainer}`}>
+                <div className={`${styles.quoteText} ${lora.variable}`}>
+                    <p className={styles.normal}>
+                        {
+                            "Pasamos la vida buscándonos sin encontrarnos.\n " +
+                            "Un día, la casualidad hizo que nos conociéramos\n " +
+                            "y diez años después queremos celebrar nuestro día más especial con vosotros"
+                        }
+                    </p>
+                    <p className={styles.normal}>
+                        {
+                            "Los esperamos el dia: Sabado 16 de noviembre"
+                        }
+                    </p>
+                    <p className={styles.normal}>
+
+                    </p>
+                </div>
+            </section>
         </>
     );
 };
 
-export default InvitationBanner;
+export default Banner;

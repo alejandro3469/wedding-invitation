@@ -5,6 +5,11 @@
   position: relative;
   width: 100%;
   height: 100vh; /* Full viewport height */
+  /* Fallback for older browsers */
+  height: calc(100vh - var(--safe-area-inset-top, 0px));
+
+  /* Modern browsers support 100dvh */
+  height: 100dvh;
   overflow: hidden;
 }
 
@@ -39,7 +44,7 @@
 
 /*INITIALS SECTION*/
 
-.initialsSection3 {
+.initialsContainer {
   left: 0;
   top: 0;
   display: flex;
@@ -50,7 +55,7 @@
   background-color: transparent;
   z-index: 10;
 }
-.initialsSection2 {
+.initialsSectionContainer {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -58,9 +63,14 @@
   justify-content: center;
   width: 100%;
   height: 100vh; /* Full viewport height */
+  /* Fallback for older browsers */
+  height: calc(100vh - var(--safe-area-inset-top, 0px));
+
+  /* Modern browsers support 100dvh */
+  height: 100dvh;
   background-color: #E0E0E0;
 }
-.initialsSection {
+.initialsLetters {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,7 +89,7 @@
   /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
   transform: rotate(-45deg); /* Rotate the entire container */
 }
-.initials2 {
+.quoteText {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -94,11 +104,14 @@
   line-height: 1.6;
 }
 
-.initials2 .accent {
+.accent {
   text-transform: uppercase;
   font-size: 1.6rem;
 }
-.initials2 .secondary {
+.secondary {
+  font-size: 1.1rem;
+}
+.normal {
   font-size: 1.1rem;
 }
 
