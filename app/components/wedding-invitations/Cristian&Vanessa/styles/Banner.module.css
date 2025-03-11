@@ -62,12 +62,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh; /* Full viewport height */
-  /* Fallback for older browsers */
-  height: calc(100vh - var(--safe-area-inset-top, 0px));
-
-  /* Modern browsers support 100dvh */
-  height: 100dvh;
+  height: 100vh;
   background-color: #E0E0E0;
 }
 .initialsLetters {
