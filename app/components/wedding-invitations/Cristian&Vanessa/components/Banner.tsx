@@ -48,9 +48,19 @@ const Banner = () => {
 
     return (
         <>
+
             <div className={styles.bannerContainer}>
                 <div className={styles.banner}>
                     <div className={styles.bannerImage}>
+                        <div className={styles.flowers}>
+                            <Image
+                                src="/invitations-files/Cristian&Vanessa/flowers.svg"
+                                alt="Banner Image"
+                                layout="fill"
+                                objectFit="cover"
+                                priority
+                            />
+                        </div>
                         <Image
                             src="/invitations-files/Cristian&Vanessa/IMG_0498.jpeg"
                             alt="Banner Image"
