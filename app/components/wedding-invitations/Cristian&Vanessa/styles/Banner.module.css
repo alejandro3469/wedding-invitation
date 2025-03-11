@@ -129,8 +129,10 @@
 .flowers {
   position: absolute;
   z-index: 10;
-  width: 240px;
-  height: 240px;
+  left: 0;
+  top: 0;
+  width: 160px;
+  height: 160px;
   opacity: 0; /* Start with the element hidden */
-  animation: slideIn 1.6s ease-in-out forwards; /* Apply the animation */
+  animation: slideIn 0.8s ease-in-out forwards; /* Apply the animation */
 }
