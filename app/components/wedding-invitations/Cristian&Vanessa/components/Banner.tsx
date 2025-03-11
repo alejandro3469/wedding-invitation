@@ -158,6 +158,11 @@ const Banner = () => {
                             " iglesia san Lorenzo "
                         }
                     </p>
+                    <b className={styles.normal}>
+                        {
+                            "13:00 pm "
+                        }
+                    </b>
                     <a href={"https://maps.app.goo.gl/gn5toBJnMNhyna5G6?g_st=iw"} className={`${styles.normal} ${styles.link}`}>
                         <svg className={styles.map} data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path>
@@ -167,11 +172,7 @@ const Banner = () => {
                             "Av. Valle de Juárez, San Lorenzo 32320 "
                         }
                     </a>
-                    <p className={styles.normal}>
-                        {
-                            "13:00 pm "
-                        }
-                    </p>
+
                 </div>
             </section>
 
