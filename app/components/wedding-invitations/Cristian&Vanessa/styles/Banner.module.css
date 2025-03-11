@@ -136,3 +136,18 @@
   opacity: 0; /* Start with the element hidden */
   animation: slideIn 0.8s ease-in-out forwards; /* Apply the animation */
 }
+
+.icon {
+  width: 80px;
+}
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.map {
+  width: 18px;
+  height: 18px;
+}
