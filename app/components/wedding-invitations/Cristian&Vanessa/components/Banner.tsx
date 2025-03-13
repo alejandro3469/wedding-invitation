@@ -148,6 +148,7 @@ const Banner = () => {
 
             <section className={`${styles.initialsSectionContainer}`}>
                 <div className={`${styles.quoteText} ${lora.variable}`}>
+                    <svg className={styles.icon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M344 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 24-32 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l32 0 0 46.4L183.3 210c-14.5 8.7-23.3 24.3-23.3 41.2L160 512l96 0 0-96c0-35.3 28.7-64 64-64s64 28.7 64 64l0 96 96 0 0-260.8c0-16.9-8.8-32.5-23.3-41.2L344 142.4 344 96l32 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-32 0 0-24zM24.9 330.3C9.5 338.8 0 354.9 0 372.4L0 464c0 26.5 21.5 48 48 48l80 0 0-238.4L24.9 330.3zM592 512c26.5 0 48-21.5 48-48l0-91.6c0-17.5-9.5-33.6-24.9-42.1L512 273.6 512 512l80 0z"/></svg>
                     <p className={styles.normal}>
                         {
                             "Ceremonia religiosa"
@@ -164,10 +165,6 @@ const Banner = () => {
                         }
                     </b>
                     <a href={"https://maps.app.goo.gl/gn5toBJnMNhyna5G6?g_st=iw"} className={`${styles.normal} ${styles.link}`}>
-                        <svg className={styles.map} data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path>
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"></path>
-                        </svg>
                         {
                             "Av. Valle de Juárez, San Lorenzo 32320 "
                         }
@@ -192,38 +189,39 @@ const Banner = () => {
 
             <section className={`${styles.initialsSectionContainer}`}>
                 <div className={`${styles.quoteText} ${lora.variable}`}>
-                    <p className={styles.accent}>
+                    <svg className={styles.icon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M155.6 17.3C163 3 179.9-3.6 195 1.9L320 47.5l125-45.6c15.1-5.5 32 1.1 39.4 15.4l78.8 152.9c28.8 55.8 10.3 122.3-38.5 156.6L556.1 413l41-15c16.6-6 35 2.5 41 19.1s-2.5 35-19.1 41l-71.1 25.9L476.8 510c-16.6 6.1-35-2.5-41-19.1s2.5-35 19.1-41l41-15-31.3-86.2c-59.4 5.2-116.2-34-130-95.2L320 188.8l-14.6 64.7c-13.8 61.3-70.6 100.4-130 95.2l-31.3 86.2 41 15c16.6 6 25.2 24.4 19.1 41s-24.4 25.2-41 19.1L92.2 484.1 21.1 458.2c-16.6-6.1-25.2-24.4-19.1-41s24.4-25.2 41-19.1l41 15 31.3-86.2C66.5 292.5 48.1 226 76.9 170.2L155.6 17.3zm44 54.4l-27.2 52.8L261.6 157l13.1-57.9L199.6 71.7zm240.9 0L365.4 99.1 378.5 157l89.2-32.5L440.5 71.7z"/></svg>
+                    <p className={styles.normal}>
                         {
                             "Recepcion:"
                         }
                     </p>
-                    <a href={"https://maps.app.goo.gl/V2nbhcbq34UYKdr27?g_st=iw"} className={styles.normal}>
+                    <p className={styles.accent}>
                         {
-                            "Jardín quinta los cerezos "
+                            "Jardín quinta los cerezos"
                         }
-                    </a>
-                    <p className={styles.normal}>
+                    </p>
+                    <a href={"https://maps.app.goo.gl/V2nbhcbq34UYKdr27?g_st=iw"} className={`${styles.normal} ${styles.link}`}>
                         {
                             "privada la rosita \n" +
                             "#1492 arcadas 32543 "
                         }
-                    </p>
-                    <p className={styles.normal}>
+                    </a>
+                    <b className={styles.normal}>
                         {
                             "21:00pm a 2:00am"
                         }
-                    </p>
+                    </b>
                 </div>
             </section>
 
             <section className={`${styles.initialsSectionContainer}`}>
                 <div className={`${styles.quoteText} ${lora.variable}`}>
-                    <p className={styles.accent}>
+                    <p className={styles.normal}>
                         {
                             "Codigo de vestimenta:"
                         }
                     </p>
-                    <p className={styles.normal}>
+                    <p className={styles.accent}>
                         {
                             "Formal"
                         }
@@ -244,6 +242,9 @@ const Banner = () => {
 
             <section className={`${styles.initialsSectionContainer}`}>
                 <div className={`${styles.quoteText} ${lora.variable}`}>
+                    <svg className={styles.icon} data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"></path>
+                    </svg>
                     <p className={styles.accent}>
                         {
                             "El gran regalo es contar con tu presencia"
@@ -254,16 +255,11 @@ const Banner = () => {
                             "Pero si tu deseo es contribuir con nuestra felicidad estaremos muy agradecidos"
                         }
                     </p>
-                    <a href={"https://mesaderegalos.liverpool.com.mx/milistaderegalos/51630326"} className={styles.normal}>
+                    <a href={"https://mesaderegalos.liverpool.com.mx/milistaderegalos/51630326"} className={`${styles.normal} ${styles.link}`}>
                         {
                             "Mesa de regalos"
                         }
                     </a>
-                    <p className={styles.normal}>
-                        {
-                            "Por favor evita los siguienes colores"
-                        }
-                    </p>
                 </div>
             </section>
 
