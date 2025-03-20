@@ -14,6 +14,10 @@
   height: 100%;
 }
 
+.none {
+  display: none;
+}
+
 .bannerImage {
   position: absolute;
   top: 0;
@@ -75,9 +79,9 @@
   justify-content: center;
   font-size: 4rem;
   /*font-weight: bold;*/
-  color: #3A6EA5; /* Adjust the text color as needed */
+  color: #3A6EA5;
   /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
-  transform: rotate(-45deg); /* Rotate the entire container */
+  transform: rotate(-45deg);
 }
 .quoteText {
   display: flex;
@@ -87,7 +91,7 @@
   justify-content: center;
   /*font-weight: bold;*/
   font-family: var(--font-lora);
-  color: #63666A; /* Adjust the text color as needed */
+  color: #63666A;
 
   text-align: center;
   margin: 24px;
@@ -107,8 +111,8 @@
 
 .letter, .ampersand {
   margin: 10px 0;
-  transform: rotate(45deg); /* Rotate the individual letters back to normal */
-  font-family: var(--font-great-vibes), cursive; /* Apply the Great Vibes font */
+  transform: rotate(45deg);
+  font-family: var(--font-great-vibes), cursive;
   color: #3A6EA5;
 }
 .ampersand {
@@ -133,8 +137,8 @@
   top: 0;
   width: 160px;
   height: 160px;
-  opacity: 0; /* Start with the element hidden */
-  animation: slideIn 0.8s ease-in-out forwards; /* Apply the animation */
+  opacity: 0;
+  animation: slideIn 0.8s ease-in-out forwards;
 }
 
 .icon {
@@ -142,14 +146,52 @@
 }
 .link {
   margin-top: 32px;
-  text-decoration: underline;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   gap: 8px;
   align-items: center;
+  border: 1px solid #63666A;
+  padding: 16px 32px;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+.link:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
 }
 .map {
   width: 18px;
   height: 18px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  height: 200px;
+}
+
+.child {
+  width: 60px;
+  height: 100px;
+  background-color: #63666A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+.middle {
+  margin-top: 24px;
+  background-color: #3A6EA5;
+}
+.left {
+  background-color: #63666A;
+}
+.right {
+  background-color: #9ca2a8;
 }
