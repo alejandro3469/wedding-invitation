@@ -32,8 +32,6 @@ const lora = localFont({
 
 const Banner = () => {
 
-    // invitations-files/Cristian&Vanessa/IMG_0498.jpeg
-
     useEffect(() => {
         const handleScroll = () => {
             const bannerImage = document.querySelector(`.${styles.bannerImage}`) as HTMLElement;
@@ -157,16 +155,16 @@ const Banner = () => {
                             "Iglesia San Lorenzo"
                         }
                     </p>
+                    <p className={`${styles.normal}`}>
+                        {
+                            "Av. Valle de Juárez, San Lorenzo 32320"
+                        }
+                    </p>
                     <b className={styles.normal}>
                         {
                             "13:00 pm"
                         }
                     </b>
-                    <a className={`${styles.normal}`}>
-                        {
-                            "Av. Valle de Juárez, San Lorenzo 32320"
-                        }
-                    </a>
                     <a href={"https://maps.app.goo.gl/gn5toBJnMNhyna5G6?g_st=iw"} className={`${styles.normal} ${styles.link}`}>
                         {
                             "Ubicación"
@@ -291,11 +289,6 @@ const Banner = () => {
                             "¿Contamos contigo?"
                         }
                     </p>
-                    <p className={styles.normal}>
-                        {
-                            "Por favor confirma tu asistencia por WhatsApp"
-                        }
-                    </p>
                     <b className={styles.normal}>
                         {
                             "Queremos que nuestra boda sea una noche especial para que todos se relajen y disfruten. " +
@@ -303,6 +296,11 @@ const Banner = () => {
                             "¡Esperamos celebrar con ustedes!"
                         }
                     </b>
+                    <p className={styles.normal}>
+                        {
+                            "Por favor confirma tu asistencia por WhatsApp"
+                        }
+                    </p>
                     <div onClick={sendWhatsAppMessage("6561447889")} className={`${styles.normal} ${styles.link}`}>
                         {
                             "Confirmar a Cristian"
