@@ -46,6 +46,12 @@ const Banner = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const sendWhatsAppMessage = (phoneNumber: string) => () : void => {
+        const message = 'Hola Cristian y Vanessa,\n\nQuiero confirmar mi asistencia a tu boda el 03 de mayo de 2025. Estoy muy emocionado/a de compartir este momento tan especial con ustedes.\n\n¡Nos vemos pronto!\n\nSaludos cordiales';
+        const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+        window.open(url, '_blank');
+    };
+
     return (
         <>
 
@@ -107,17 +113,17 @@ const Banner = () => {
 
             <section className={`${styles.initialsSectionContainer}`}>
                 <div className={`${styles.quoteText} ${lora.variable}`}>
-                    <svg className={styles.icon} data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <svg className={styles.icon} data-slot="icon" fill="none" stroke-width="1.5" stroke="#63666A" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"></path>
                     </svg>
                     <p className={styles.normal}>
                         {
-                            "Los esperamos el dia:"
+                            "Los esperamos el día:"
                         }
                     </p>
                     <p className={styles.accent}>
                         {
-                            "Sabado 03 de Mayo de 2025"
+                            "Sábado 03 de Mayo de 2025"
                         }
                     </p>
                 </div>
@@ -139,7 +145,9 @@ const Banner = () => {
 
             <section className={`${styles.initialsSectionContainer}`}>
                 <div className={`${styles.quoteText} ${lora.variable}`}>
-                    <svg className={styles.icon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M344 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 24-32 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l32 0 0 46.4L183.3 210c-14.5 8.7-23.3 24.3-23.3 41.2L160 512l96 0 0-96c0-35.3 28.7-64 64-64s64 28.7 64 64l0 96 96 0 0-260.8c0-16.9-8.8-32.5-23.3-41.2L344 142.4 344 96l32 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-32 0 0-24zM24.9 330.3C9.5 338.8 0 354.9 0 372.4L0 464c0 26.5 21.5 48 48 48l80 0 0-238.4L24.9 330.3zM592 512c26.5 0 48-21.5 48-48l0-91.6c0-17.5-9.5-33.6-24.9-42.1L512 273.6 512 512l80 0z"/></svg>
+                    <svg className={styles.icon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                        <path d="M344 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 24-32 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l32 0 0 46.4L183.3 210c-14.5 8.7-23.3 24.3-23.3 41.2L160 512l96 0 0-96c0-35.3 28.7-64 64-64s64 28.7 64 64l0 96 96 0 0-260.8c0-16.9-8.8-32.5-23.3-41.2L344 142.4 344 96l32 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-32 0 0-24zM24.9 330.3C9.5 338.8 0 354.9 0 372.4L0 464c0 26.5 21.5 48 48 48l80 0 0-238.4L24.9 330.3zM592 512c26.5 0 48-21.5 48-48l0-91.6c0-17.5-9.5-33.6-24.9-42.1L512 273.6 512 512l80 0z" stroke="#63666A"/>
+                    </svg>
                     <p className={styles.normal}>
                         {
                             "Ceremonia religiosa"
@@ -147,22 +155,22 @@ const Banner = () => {
                     </p>
                     <p className={styles.accent}>
                         {
-                            " iglesia san Lorenzo "
+                            "Iglesia San Lorenzo"
                         }
                     </p>
                     <b className={styles.normal}>
                         {
-                            "13:00 pm "
+                            "13:00 pm"
                         }
                     </b>
                     <a className={`${styles.normal}`}>
                         {
-                            "Av. Valle de Juárez, San Lorenzo 32320 "
+                            "Av. Valle de Juárez, San Lorenzo 32320"
                         }
                     </a>
                     <a href={"https://maps.app.goo.gl/gn5toBJnMNhyna5G6?g_st=iw"} className={`${styles.normal} ${styles.link}`}>
                         {
-                            "Ubicacion"
+                            "Ubicación"
                         }
                     </a>
 
@@ -188,29 +196,29 @@ const Banner = () => {
                     <svg className={styles.icon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M155.6 17.3C163 3 179.9-3.6 195 1.9L320 47.5l125-45.6c15.1-5.5 32 1.1 39.4 15.4l78.8 152.9c28.8 55.8 10.3 122.3-38.5 156.6L556.1 413l41-15c16.6-6 35 2.5 41 19.1s-2.5 35-19.1 41l-71.1 25.9L476.8 510c-16.6 6.1-35-2.5-41-19.1s2.5-35 19.1-41l41-15-31.3-86.2c-59.4 5.2-116.2-34-130-95.2L320 188.8l-14.6 64.7c-13.8 61.3-70.6 100.4-130 95.2l-31.3 86.2 41 15c16.6 6 25.2 24.4 19.1 41s-24.4 25.2-41 19.1L92.2 484.1 21.1 458.2c-16.6-6.1-25.2-24.4-19.1-41s24.4-25.2 41-19.1l41 15 31.3-86.2C66.5 292.5 48.1 226 76.9 170.2L155.6 17.3zm44 54.4l-27.2 52.8L261.6 157l13.1-57.9L199.6 71.7zm240.9 0L365.4 99.1 378.5 157l89.2-32.5L440.5 71.7z"/></svg>
                     <p className={styles.normal}>
                         {
-                            "Recepcion:"
+                            "Recepción:"
                         }
                     </p>
                     <p className={styles.accent}>
                         {
-                            "Jardín quinta los cerezos"
+                            "Jardín Quinta Los Cerezos"
                         }
                     </p>
                     <a className={`${styles.normal}`}>
                         {
-                            "privada la rosita \n" +
-                            "#1492 arcadas 32543 "
+                            "Privada La Rosita \n" +
+                            "#1492 Arcadas 32543"
                         }
                     </a>
                     <b className={styles.normal}>
                         {
-                            "21:00pm a 2:00am"
+                            "21:00 pm a 2:00 am"
                         }
                     </b>
 
                     <a href={"https://maps.app.goo.gl/V2nbhcbq34UYKdr27?g_st=iw"} className={`${styles.normal} ${styles.link}`}>
                         {
-                            "Ubicacion"
+                            "Ubicación"
                         }
                     </a>
                 </div>
@@ -221,7 +229,7 @@ const Banner = () => {
                     <img className={styles.icon} src={"/invitations-files/Cristian&Vanessa/17456117.svg"} />
                     <p className={styles.normal}>
                         {
-                            "Codigo de vestimenta:"
+                            "Código de vestimenta:"
                         }
                     </p>
                     <p className={styles.accent}>
@@ -236,23 +244,24 @@ const Banner = () => {
                     </p>
                     <p className={styles.normal}>
                         {
-                            "Por favor evita los siguienes colores"
+                            "Por favor evita los siguientes colores"
                         }
                     </p>
                     <div className={styles.container}>
                         <div className={`${styles.child} ${styles.left}`} />
                         <div className={`${styles.child} ${styles.middle}`} />
                         <div className={`${styles.child} ${styles.right}`} />
+                        <div className={`${styles.child} ${styles.red}`} />
                     </div>
                 </div>
             </section>
 
-
             <section className={`${styles.initialsSectionContainer}`}>
+                <svg className={styles.icon} data-slot="icon" fill="none" stroke-width="1.5" stroke="#63666A" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"></path>
+                </svg>
                 <div className={`${styles.quoteText} ${lora.variable}`}>
-                    <svg className={styles.icon} data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"></path>
-                    </svg>
+
                     <p className={styles.accent}>
                         {
                             "El gran regalo es contar con tu presencia"
@@ -278,7 +287,6 @@ const Banner = () => {
 
             <section className={`${styles.initialsSectionContainer}`}>
                 <div className={`${styles.quoteText} ${lora.variable}`}>
-                    <svg className={styles.none} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
                     <p className={styles.accent}>
                         {
                             "¿Contamos contigo?"
@@ -286,7 +294,7 @@ const Banner = () => {
                     </p>
                     <p className={styles.normal}>
                         {
-                            "Porfavor confirma tu asistencia por Whatsapp"
+                            "Por favor confirma tu asistencia por WhatsApp"
                         }
                     </p>
                     <p className={styles.normal}>
@@ -296,11 +304,18 @@ const Banner = () => {
                             "¡Esperamos celebrar con ustedes!"
                         }
                     </p>
-                    <a href={"https://maps.app.goo.gl/V2nbhcbq34UYKdr27?g_st=iw"} className={`${styles.normal} ${styles.link}`}>
+                    <div onClick={sendWhatsAppMessage("5630008517")} className={`${styles.normal} ${styles.link}`}>
                         {
-                            "Asistire(mos)"
+                            "Confirmar a Cristian"
                         }
-                    </a>
+                    </div>
+
+                    <div onClick={sendWhatsAppMessage("5627641178")} className={`${styles.normal} ${styles.link}`}>
+                        {
+                            "Confirmar a Vanessa"
+                        }
+                    </div>
+
                 </div>
             </section>
 
@@ -308,7 +323,7 @@ const Banner = () => {
                 <div className={`${styles.quoteText} ${lora.variable}`}>
                     <p className={styles.accent}>
                         {
-                            "Te esperamos!"
+                            "¡Te esperamos!"
                         }
                     </p>
                 </div>

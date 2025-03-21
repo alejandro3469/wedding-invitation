@@ -143,6 +143,10 @@
 
 .icon {
   width: 80px;
+  color: #63666A;
+}
+.icon path {
+  stroke: #63666A;
 }
 .link {
   margin-top: 32px;
@@ -174,8 +178,8 @@
 }
 
 .child {
-  width: 60px;
-  height: 100px;
+  width: 40px;
+  height: 80px;
   background-color: #63666A;
   display: flex;
   align-items: center;
@@ -185,7 +189,7 @@
   border-radius: 2px;
 }
 
-.middle {
+.middle, .red {
   margin-top: 24px;
   background-color: #3A6EA5;
 }
@@ -194,4 +198,7 @@
 }
 .right {
   background-color: #9ca2a8;
+}
+.red {
+  background-color: #D50000;
 }
