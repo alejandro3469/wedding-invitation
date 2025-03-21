@@ -45,7 +45,8 @@ const Banner = () => {
     }, []);
 
     const sendWhatsAppMessage = (phoneNumber: string) => () : void => {
-        const message = 'Hola Cristian y Vanessa,\n\nQuiero confirmar mi asistencia a tu boda el 03 de mayo de 2025. Estoy muy emocionado/a de compartir este momento tan especial con ustedes. 💍💖\n\n¡Nos vemos pronto! 🎉\n\nSaludos cordiales, 😊';        const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+        const message = 'Hola Cristian y Vanessa,\n\nQuiero confirmar mi asistencia a tu boda el 03 de mayo de 2025. Estoy muy emocionado/a de compartir este momento tan especial con ustedes. 💍💖\n\n¡Nos vemos pronto! 🎉\n\nSaludos cordiales, 😊';
+        const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
     };
 
@@ -301,13 +302,13 @@ const Banner = () => {
                             "Por favor confirma tu asistencia por WhatsApp"
                         }
                     </p>
-                    <div onClick={sendWhatsAppMessage("6561447889")} className={`${styles.normal} ${styles.link}`}>
+                    <div onClick={sendWhatsAppMessage("+52 6561447889")} className={`${styles.normal} ${styles.link}`}>
                         {
                             "Confirmar a Cristian"
                         }
                     </div>
 
-                    <div onClick={sendWhatsAppMessage("6567496746")} className={`${styles.normal} ${styles.link}`}>
+                    <div onClick={sendWhatsAppMessage("+52 6567496746")} className={`${styles.normal} ${styles.link}`}>
                         {
                             "Confirmar a Vanessa"
                         }
