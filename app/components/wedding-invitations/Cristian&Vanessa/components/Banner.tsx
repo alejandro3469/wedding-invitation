@@ -296,13 +296,13 @@ const Banner = () => {
                             "Por favor confirma tu asistencia por WhatsApp"
                         }
                     </p>
-                    <p className={styles.normal}>
+                    <b className={styles.normal}>
                         {
                             "Queremos que nuestra boda sea una noche especial para que todos se relajen y disfruten. " +
                             "Por ello, hemos decidido que el evento sea solo para adultos. " +
                             "¡Esperamos celebrar con ustedes!"
                         }
-                    </p>
+                    </b>
                     <div onClick={sendWhatsAppMessage("6561447889")} className={`${styles.normal} ${styles.link}`}>
                         {
                             "Confirmar a Cristian"
