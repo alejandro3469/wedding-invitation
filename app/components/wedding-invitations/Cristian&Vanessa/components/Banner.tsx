@@ -303,13 +303,13 @@ const Banner = () => {
                             "¡Esperamos celebrar con ustedes!"
                         }
                     </p>
-                    <div onClick={sendWhatsAppMessage("5630008517")} className={`${styles.normal} ${styles.link}`}>
+                    <div onClick={sendWhatsAppMessage("6561447889")} className={`${styles.normal} ${styles.link}`}>
                         {
                             "Confirmar a Cristian"
                         }
                     </div>
 
-                    <div onClick={sendWhatsAppMessage("5627641178")} className={`${styles.normal} ${styles.link}`}>
+                    <div onClick={sendWhatsAppMessage("6567496746")} className={`${styles.normal} ${styles.link}`}>
                         {
                             "Confirmar a Vanessa"
                         }
