@@ -47,8 +47,7 @@ const Banner = () => {
     }, []);
 
     const sendWhatsAppMessage = (phoneNumber: string) => () : void => {
-        const message = 'Hola Cristian y Vanessa,\n\nQuiero confirmar mi asistencia a tu boda el 03 de mayo de 2025. Estoy muy emocionado/a de compartir este momento tan especial con ustedes.\n\n¡Nos vemos pronto!\n\nSaludos cordiales';
-        const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+        const message = 'Hola Cristian y Vanessa,\n\nQuiero confirmar mi asistencia a tu boda el 03 de mayo de 2025. Estoy muy emocionado/a de compartir este momento tan especial con ustedes. 💍💖\n\n¡Nos vemos pronto! 🎉\n\nSaludos cordiales, 😊';        const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
     };
 
