@@ -86,7 +86,7 @@
 .quoteText {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 56px;
   align-items: center;
   justify-content: center;
   /*font-weight: bold;*/
@@ -96,6 +96,13 @@
   text-align: center;
   margin: 24px;
   line-height: 1.6;
+}
+.quoteText > .subcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .accent {
@@ -149,7 +156,6 @@
   stroke: #63666A;
 }
 .link {
-  margin-top: 32px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -166,6 +172,12 @@
 .map {
   width: 18px;
   height: 18px;
+}
+.title {
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .container {

@@ -111,19 +111,28 @@ const Banner = () => {
 
             <section className={`${styles.initialsSectionContainer}`}>
                 <div className={`${styles.quoteText} ${lora.variable}`}>
-                    <svg className={styles.icon} data-slot="icon" fill="none" stroke-width="1.5" stroke="#63666A" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"></path>
-                    </svg>
-                    <p className={styles.normal}>
-                        {
-                            "Los esperamos el día:"
-                        }
-                    </p>
-                    <p className={styles.accent}>
-                        {
-                            "Sábado 03 de Mayo de 2025"
-                        }
-                    </p>
+                    <div>
+                        <svg className={styles.icon} data-slot="icon" fill="none" stroke-width="1.5" stroke="#63666A" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"></path>
+                        </svg>
+                        <p className={`${styles.normal} ${styles.title}`}>
+                            {
+                                "Fecha"
+                            }
+                        </p>
+                    </div>
+                    <div>
+                        <p className={styles.normal}>
+                            {
+                                "Los esperamos el día:"
+                            }
+                        </p>
+                        <p className={styles.accent}>
+                            {
+                                "Sábado 03 de Mayo de 2025"
+                            }
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -143,29 +152,33 @@ const Banner = () => {
 
             <section className={`${styles.initialsSectionContainer}`}>
                 <div className={`${styles.quoteText} ${lora.variable}`}>
-                    <svg className={styles.icon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-                        <path d="M344 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 24-32 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l32 0 0 46.4L183.3 210c-14.5 8.7-23.3 24.3-23.3 41.2L160 512l96 0 0-96c0-35.3 28.7-64 64-64s64 28.7 64 64l0 96 96 0 0-260.8c0-16.9-8.8-32.5-23.3-41.2L344 142.4 344 96l32 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-32 0 0-24zM24.9 330.3C9.5 338.8 0 354.9 0 372.4L0 464c0 26.5 21.5 48 48 48l80 0 0-238.4L24.9 330.3zM592 512c26.5 0 48-21.5 48-48l0-91.6c0-17.5-9.5-33.6-24.9-42.1L512 273.6 512 512l80 0z" stroke="#63666A"/>
-                    </svg>
-                    <p className={styles.normal}>
-                        {
-                            "Ceremonia religiosa"
-                        }
-                    </p>
-                    <p className={styles.accent}>
-                        {
-                            "Iglesia San Lorenzo"
-                        }
-                    </p>
-                    <p className={`${styles.normal}`}>
-                        {
-                            "Av. Valle de Juárez, San Lorenzo 32320"
-                        }
-                    </p>
-                    <b className={styles.normal}>
-                        {
-                            "13:00 pm"
-                        }
-                    </b>
+                    <div className={styles.subcontainer}>
+                        <svg className={styles.icon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path d="M344 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 24-32 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l32 0 0 46.4L183.3 210c-14.5 8.7-23.3 24.3-23.3 41.2L160 512l96 0 0-96c0-35.3 28.7-64 64-64s64 28.7 64 64l0 96 96 0 0-260.8c0-16.9-8.8-32.5-23.3-41.2L344 142.4 344 96l32 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-32 0 0-24zM24.9 330.3C9.5 338.8 0 354.9 0 372.4L0 464c0 26.5 21.5 48 48 48l80 0 0-238.4L24.9 330.3zM592 512c26.5 0 48-21.5 48-48l0-91.6c0-17.5-9.5-33.6-24.9-42.1L512 273.6 512 512l80 0z" stroke="#63666A" fill="#63666A"/>
+                        </svg>
+                        <p className={`${styles.normal} ${styles.title}`}>
+                            {
+                                "Ceremonia religiosa"
+                            }
+                        </p>
+                    </div>
+                    <div>
+                        <p className={styles.accent}>
+                            {
+                                "Iglesia San Lorenzo"
+                            }
+                        </p>
+                        <p className={`${styles.normal}`}>
+                            {
+                                "Av. Valle de Juárez, San Lorenzo 32320"
+                            }
+                        </p>
+                        <b className={styles.normal}>
+                            {
+                                "13:00 pm"
+                            }
+                        </b>
+                    </div>
                     <a href={"https://maps.app.goo.gl/gn5toBJnMNhyna5G6?g_st=iw"} className={`${styles.normal} ${styles.link}`}>
                         {
                             "Ubicación"
@@ -191,28 +204,33 @@ const Banner = () => {
 
             <section className={`${styles.initialsSectionContainer}`}>
                 <div className={`${styles.quoteText} ${lora.variable}`}>
-                    <svg className={styles.icon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M155.6 17.3C163 3 179.9-3.6 195 1.9L320 47.5l125-45.6c15.1-5.5 32 1.1 39.4 15.4l78.8 152.9c28.8 55.8 10.3 122.3-38.5 156.6L556.1 413l41-15c16.6-6 35 2.5 41 19.1s-2.5 35-19.1 41l-71.1 25.9L476.8 510c-16.6 6.1-35-2.5-41-19.1s2.5-35 19.1-41l41-15-31.3-86.2c-59.4 5.2-116.2-34-130-95.2L320 188.8l-14.6 64.7c-13.8 61.3-70.6 100.4-130 95.2l-31.3 86.2 41 15c16.6 6 25.2 24.4 19.1 41s-24.4 25.2-41 19.1L92.2 484.1 21.1 458.2c-16.6-6.1-25.2-24.4-19.1-41s24.4-25.2 41-19.1l41 15 31.3-86.2C66.5 292.5 48.1 226 76.9 170.2L155.6 17.3zm44 54.4l-27.2 52.8L261.6 157l13.1-57.9L199.6 71.7zm240.9 0L365.4 99.1 378.5 157l89.2-32.5L440.5 71.7z"/></svg>
-                    <p className={styles.normal}>
-                        {
-                            "Recepción:"
-                        }
-                    </p>
-                    <p className={styles.accent}>
-                        {
-                            "Jardín Quinta Los Cerezos"
-                        }
-                    </p>
-                    <a className={`${styles.normal}`}>
-                        {
-                            "Privada La Rosita \n" +
-                            "#1492 Arcadas 32543"
-                        }
-                    </a>
-                    <b className={styles.normal}>
-                        {
-                            "21:00 pm a 2:00 am"
-                        }
-                    </b>
+                    <div className={styles.subcontainer}>
+                        <svg className={styles.icon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M155.6 17.3C163 3 179.9-3.6 195 1.9L320 47.5l125-45.6c15.1-5.5 32 1.1 39.4 15.4l78.8 152.9c28.8 55.8 10.3 122.3-38.5 156.6L556.1 413l41-15c16.6-6 35 2.5 41 19.1s-2.5 35-19.1 41l-71.1 25.9L476.8 510c-16.6 6.1-35-2.5-41-19.1s2.5-35 19.1-41l41-15-31.3-86.2c-59.4 5.2-116.2-34-130-95.2L320 188.8l-14.6 64.7c-13.8 61.3-70.6 100.4-130 95.2l-31.3 86.2 41 15c16.6 6 25.2 24.4 19.1 41s-24.4 25.2-41 19.1L92.2 484.1 21.1 458.2c-16.6-6.1-25.2-24.4-19.1-41s24.4-25.2 41-19.1l41 15 31.3-86.2C66.5 292.5 48.1 226 76.9 170.2L155.6 17.3zm44 54.4l-27.2 52.8L261.6 157l13.1-57.9L199.6 71.7zm240.9 0L365.4 99.1 378.5 157l89.2-32.5L440.5 71.7z" fill="#63666A" stroke="#63666A"/></svg>
+                        <p className={`${styles.normal} ${styles.title}`}>
+                            {
+                                "Recepción"
+                            }
+                        </p>
+                    </div>
+                    <div>
+                        <p className={styles.accent}>
+                            {
+                                "Jardín Quinta Los Cerezos"
+                            }
+                        </p>
+                        <p className={`${styles.normal}`}>
+                            {
+                                "Privada La Rosita \n" +
+                                "#1492 Arcadas 32543"
+                            }
+                        </p>
+                        <b className={styles.normal}>
+                            {
+                                "21:00 pm a 2:00 am"
+                            }
+                        </b>
+                    </div>
+
 
                     <a href={"https://maps.app.goo.gl/V2nbhcbq34UYKdr27?g_st=iw"} className={`${styles.normal} ${styles.link}`}>
                         {
@@ -224,57 +242,61 @@ const Banner = () => {
 
             <section className={`${styles.initialsSectionContainer}`}>
                 <div className={`${styles.quoteText} ${lora.variable}`}>
-                    <img className={styles.icon} src={"/invitations-files/Cristian&Vanessa/17456117.svg"} />
-                    <p className={styles.normal}>
-                        {
-                            "Código de vestimenta:"
-                        }
-                    </p>
+                    <div className={styles.subcontainer}>
+                        <img className={styles.icon} src={"/invitations-files/Cristian&Vanessa/17456117.svg"} />
+                        <p className={`${styles.normal} ${styles.title}`}>
+                            {
+                                "Código de vestimenta"
+                            }
+                        </p>
+                    </div>
                     <p className={styles.accent}>
                         {
                             "Formal"
                         }
                     </p>
-                    <p className={styles.normal}>
-                        {
-                            "Hagamos que todo luzca como siempre lo soñamos"
-                        }
-                    </p>
-                    <p className={styles.normal}>
-                        {
-                            "Por favor evita los siguientes colores"
-                        }
-                    </p>
-                    <div className={styles.container}>
-                        <div className={`${styles.child} ${styles.left}`} />
-                        <div className={`${styles.child} ${styles.middle}`} />
-                        <div className={`${styles.child} ${styles.right}`} />
-                        <div className={`${styles.child} ${styles.red}`} />
+                    <div>
+                        <p className={styles.normal}>
+                            {
+                                "Hagamos que todo luzca como siempre lo soñamos. Por favor evita los siguientes colores"
+                            }
+                        </p>
+                        <div className={styles.container}>
+                            <div className={`${styles.child} ${styles.left}`} />
+                            <div className={`${styles.child} ${styles.middle}`} />
+                            <div className={`${styles.child} ${styles.right}`} />
+                            <div className={`${styles.child} ${styles.red}`} />
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section className={`${styles.initialsSectionContainer}`}>
-                <svg className={styles.icon} data-slot="icon" fill="none" stroke-width="1.5" stroke="#63666A" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"></path>
-                </svg>
-                <div className={`${styles.quoteText} ${lora.variable}`}>
 
-                    <p className={styles.accent}>
-                        {
-                            "El gran regalo es contar con tu presencia"
-                        }
-                    </p>
-                    <p className={styles.normal}>
-                        {
-                            "Pero si tu deseo es contribuir con nuestra felicidad estaremos muy agradecidos"
-                        }
-                    </p>
-                    <p className={`${styles.normal}`}>
-                        {
-                            "Mesa de regalos"
-                        }
-                    </p>
+                <div className={`${styles.quoteText} ${lora.variable}`}>
+                    <div>
+                        <svg className={styles.icon} data-slot="icon" fill="none" stroke-width="1.5" stroke="#63666A" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"></path>
+                        </svg>
+                        <p className={`${styles.normal} ${styles.title}`}>
+                            {
+                                "Mesa de regalos"
+                            }
+                        </p>
+                    </div>
+                    <div>
+                        <p className={styles.accent}>
+                            {
+                                "El gran regalo es contar con tu presencia"
+                            }
+                        </p>
+                        <p className={styles.normal}>
+                            {
+                                "Pero si tu deseo es contribuir con nuestra felicidad estaremos muy agradecidos"
+                            }
+                        </p>
+                    </div>
+
                     <a href={"https://mesaderegalos.liverpool.com.mx/milistaderegalos/51630326"} className={`${styles.normal} ${styles.link}`}>
                         {
                             "Liverpool"
@@ -285,7 +307,7 @@ const Banner = () => {
 
             <section className={`${styles.initialsSectionContainer}`}>
                 <div className={`${styles.quoteText} ${lora.variable}`}>
-                    <p className={styles.accent}>
+                    <p className={`${styles.normal} ${styles.title}`}>
                         {
                             "¿Contamos contigo?"
                         }
@@ -302,16 +324,18 @@ const Banner = () => {
                             "Por favor confirma tu asistencia por WhatsApp"
                         }
                     </p>
-                    <div onClick={sendWhatsAppMessage("+52 6561447889")} className={`${styles.normal} ${styles.link}`}>
-                        {
-                            "Confirmar a Cristian"
-                        }
-                    </div>
+                    <div className={styles.subcontainer}>
+                        <div onClick={sendWhatsAppMessage("+52 6561447889")} className={`${styles.normal} ${styles.link}`}>
+                            {
+                                "Confirmar a Cristian"
+                            }
+                        </div>
 
-                    <div onClick={sendWhatsAppMessage("+52 6567496746")} className={`${styles.normal} ${styles.link}`}>
-                        {
-                            "Confirmar a Vanessa"
-                        }
+                        <div onClick={sendWhatsAppMessage("+52 6567496746")} className={`${styles.normal} ${styles.link}`}>
+                            {
+                                "Confirmar a Vanessa"
+                            }
+                        </div>
                     </div>
 
                 </div>
