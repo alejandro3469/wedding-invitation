@@ -179,7 +179,7 @@ const Banner = () => {
                             }
                         </b>
                     </div>
-                    <a href={"https://maps.app.goo.gl/gn5toBJnMNhyna5G6?g_st=iw"} className={`${styles.normal} ${styles.link}`}>
+                    <a href={"https://maps.app.goo.gl/gn5toBJnMNhyna5G6?g_st=iw"} className={`${styles.normal} ${styles.button}`}>
                         {
                             "Ubicación"
                         }
@@ -232,7 +232,7 @@ const Banner = () => {
                     </div>
 
 
-                    <a href={"https://maps.app.goo.gl/V2nbhcbq34UYKdr27?g_st=iw"} className={`${styles.normal} ${styles.link}`}>
+                    <a href={"https://maps.app.goo.gl/V2nbhcbq34UYKdr27?g_st=iw"} className={`${styles.normal} ${styles.button}`}>
                         {
                             "Ubicación"
                         }
@@ -297,7 +297,7 @@ const Banner = () => {
                         </p>
                     </div>
 
-                    <a href={"https://mesaderegalos.liverpool.com.mx/milistaderegalos/51630326"} className={`${styles.normal} ${styles.link}`}>
+                    <a href={"https://mesaderegalos.liverpool.com.mx/milistaderegalos/51630326"} className={`${styles.normal} ${styles.button}`}>
                         {
                             "Liverpool"
                         }
@@ -325,13 +325,13 @@ const Banner = () => {
                         }
                     </p>
                     <div className={styles.subcontainer}>
-                        <div onClick={sendWhatsAppMessage("+526561447889")} className={`${styles.normal} ${styles.link}`}>
+                        <div onClick={sendWhatsAppMessage("+526561447889")} className={`${styles.normal} ${styles.button}`}>
                             {
                                 "Confirmar a Cristian"
                             }
                         </div>
 
-                        <div onClick={sendWhatsAppMessage("+5216567496746")} className={`${styles.normal} ${styles.link}`}>
+                        <div onClick={sendWhatsAppMessage("+5216567496746")} className={`${styles.normal} ${styles.button}`}>
                             {
                                 "Confirmar a Vanessa"
                             }
