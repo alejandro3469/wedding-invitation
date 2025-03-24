@@ -266,6 +266,7 @@ const Banner = () => {
                             <div className={`${styles.child} ${styles.middle}`} />
                             <div className={`${styles.child} ${styles.right}`} />
                             <div className={`${styles.child} ${styles.red}`} />
+                            <div className={`${styles.child} ${styles.white}`} />
                         </div>
                     </div>
                 </div>
