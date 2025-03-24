@@ -250,23 +250,25 @@ const Banner = () => {
                             }
                         </p>
                     </div>
-                    <p className={styles.accent}>
-                        {
-                            "Formal"
-                        }
-                    </p>
-                    <div>
-                        <p className={styles.normal}>
+                    <div className={styles.subcontainer}>
+                        <p className={styles.accent}>
                             {
-                                "Hagamos que todo luzca como siempre lo soñamos. Por favor evita los siguientes colores"
+                                "Formal"
                             }
                         </p>
-                        <div className={styles.container}>
-                            <div className={`${styles.child} ${styles.left}`} />
-                            <div className={`${styles.child} ${styles.middle}`} />
-                            <div className={`${styles.child} ${styles.right}`} />
-                            <div className={`${styles.child} ${styles.red}`} />
-                            <div className={`${styles.child} ${styles.white}`} />
+                        <div>
+                            <p className={styles.normal}>
+                                {
+                                    "Hagamos que todo luzca como siempre lo soñamos. Por favor evita los siguientes colores"
+                                }
+                            </p>
+                            <div className={styles.container}>
+                                <div className={`${styles.child} ${styles.left}`} />
+                                <div className={`${styles.child} ${styles.middle}`} />
+                                <div className={`${styles.child} ${styles.right}`} />
+                                <div className={`${styles.child} ${styles.red}`} />
+                                <div className={`${styles.child} ${styles.white}`} />
+                            </div>
                         </div>
                     </div>
                 </div>
