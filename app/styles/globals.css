@@ -13,3 +13,38 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+
+/* variables.css */
+:root {
+  /* Colores */
+  --color-primary: #d2b48c; /* Taupe */
+  --color-secondary: #f5f5dc; /* Beige */
+  --color-accent: #2a491f; /* Moss */
+  --color-text: #2c2c2c; /* Texto oscuro */
+  --color-muted: #8b7b6c; /* Taupe oscuro */
+  --color-light: #fffaf0; /* Crema */
+  --color-background: #f7f3eb; /* Fondo general */
+
+  /* Tipografía */
+  --font-primary: 'Lato', sans-serif;
+  --font-secondary: 'Playfair Display', serif;
+  --base-font-size: 16px;
+
+  /* Espaciado */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+
+  /* Bordes */
+  --radius-sm: 0.3rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+
+  /* Sombreado */
+  --box-shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --box-shadow-medium: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
