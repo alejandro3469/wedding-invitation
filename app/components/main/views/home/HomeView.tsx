@@ -4,7 +4,6 @@ import React from 'react';
 import Image from "next/image";
 
 import AddWeddingCouple from '../ads/views/WeddingCoupleAd';
-import SubmissionForm from "@/app/components/main/views/home/SubmissionForm";
 import Hero from "@/app/components/main/views/home/Hero";
 import styles from '../../styles/HomeView.module.css';
 
@@ -95,8 +94,6 @@ const HomeView = () => {
                         </div>
                     </section>
                 </section>
-
-                <SubmissionForm />
             </div>
     </div>
   );
