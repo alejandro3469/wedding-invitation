@@ -75,6 +75,11 @@
     justify-content: center;
     cursor: pointer;
 }
+.dropdownsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
 .dropdownContainer {
     position: relative;
     padding: 0 32px;
@@ -86,6 +91,7 @@
 .dropdownTitle {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 16px;
     align-items: center;
     font-size: 16px;
