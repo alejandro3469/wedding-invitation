@@ -25,16 +25,17 @@ const Hero = () => {
                         }
                     </p>
                 </div>
+            </section>
+            <section className={styles.container}>
                 <div className={styles.ovalWrapper}>
                     <Image
-                        src="/hero/andres-molina-P-skRAwsBsI-unsplash.jpg"
+                        src="/hero/jocelyn-allen-L4E-aN798wA-unsplash.jpg"
                         alt="Oval Image"
                         width={1200}
                         height={600}
                         className={styles.ovalImage}
                     />
                 </div>
-                <span className={styles.dark} />
             </section>
         </>
     );

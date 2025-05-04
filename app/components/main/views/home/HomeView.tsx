@@ -18,6 +18,7 @@ const HomeView = () => {
         <div className={`${styles.container} ${OpenSans.className}`}>
             {/* Hero Section */}
             <Hero />
+
             <Highlights />
             <Services />
 

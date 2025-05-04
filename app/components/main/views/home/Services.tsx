@@ -34,7 +34,7 @@ const Highlights = () => {
     return (
         <>
 
-            <section className={styles.container}>
+            <section className={styles.container} style={{marginBottom: "32px"}}>
                 <h3 className={styles.textContainer}>Services</h3>
                 <div className={styles.dropdownsSection}>
                     <div className={styles.dropdownContainer}>
@@ -204,50 +204,53 @@ const Highlights = () => {
                     </div>
                 </div>
 
-                <div>
-                    <h5>
-                        Pricing
-                    </h5>
-                    <div>
-                        <div>
-                            {
-                                "Headline: Transparent Pricing"
-                            }
-                        </div>
-                        <div>
-                            {
-                                "Subheadline: Affordable Options for Every Budget"
-                            }
-                        </div>
-                        <div>
-                            {
-                                "We offer clear and competitive pricing for both template and custom wedding websites. " +
-                                "Choose the option that best fits your needs and budget."
-                            }
-                        </div>
-                    </div>
+                <div style={{display: "none"}}>
 
                     <div>
+                        <h5>
+                            Pricing
+                        </h5>
                         <div>
-                            <h6>Template Websites:</h6>
-                            <p>Basic Template: $199</p>
-                            <p>Includes: Banner, date, ceremony, party, dress code, gifts, attending confirmation via WhatsApp, greetings.</p>
+                            <div>
+                                {
+                                    "Headline: Transparent Pricing"
+                                }
+                            </div>
+                            <div>
+                                {
+                                    "Subheadline: Affordable Options for Every Budget"
+                                }
+                            </div>
+                            <div>
+                                {
+                                    "We offer clear and competitive pricing for both template and custom wedding websites. " +
+                                    "Choose the option that best fits your needs and budget."
+                                }
+                            </div>
                         </div>
-                        <div>
-                            <h6>Basic Custom Website:</h6>
-                            <p>Basic Template: $599</p>
-                            <p>Includes: Personalized design, banner, date, ceremony, party, dress code, gifts, attending confirmation via WhatsApp, greetings.</p>
-                        </div>
-                        <div>
-                            <h6>Custom Additional Sections:</h6>
-                            <p>Basic Template: $99</p>
-                        </div>
-                        <div>
-                            <h6>Custom Interactive Elements:</h6>
-                            <p>Basic Template: $99</p>
-                        </div>
-                    </div>
 
+                        <div>
+                            <div>
+                                <h6>Template Websites:</h6>
+                                <p>Basic Template: $199</p>
+                                <p>Includes: Banner, date, ceremony, party, dress code, gifts, attending confirmation via WhatsApp, greetings.</p>
+                            </div>
+                            <div>
+                                <h6>Basic Custom Website:</h6>
+                                <p>Basic Template: $599</p>
+                                <p>Includes: Personalized design, banner, date, ceremony, party, dress code, gifts, attending confirmation via WhatsApp, greetings.</p>
+                            </div>
+                            <div>
+                                <h6>Custom Additional Sections:</h6>
+                                <p>Basic Template: $99</p>
+                            </div>
+                            <div>
+                                <h6>Custom Interactive Elements:</h6>
+                                <p>Basic Template: $99</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </section>
         </>
