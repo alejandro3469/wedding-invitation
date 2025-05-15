@@ -13,16 +13,17 @@ const Hero = () => {
         <>
             <section className={styles.container}>
                 <div className={styles.textContainer}>
-                    <h3 className={styles.overheader}>Personalized, Beautiful, and Stress-Free</h3>
-                    <h1 className={`${styles.header} ${anticDidone.className}`}>Create Your Dream Wedding Website</h1>
+                    <h3 className={styles.overheader}>HECHO A TU MEDIDA, ELEGANTE Y SIN COMPLICACIONES</h3>
+                    <h1 className={`${styles.header} ${anticDidone.className}`}>Crea la invitacion de boda de tus sueños</h1>
                     <h3 className={styles.subheader}>Subheader</h3>
 
                     <p className={styles.bodytext}>
-                        {
-                            "We turn your wedding vision into a stunning reality. " +
-                            "Whether you want a custom design or a ready-made template, " +
-                            "we have the perfect solution for you."
-                        }
+                        {"Convertimos tus ideas en algo único y lleno de amor."}
+                        <br/>
+                        {"Elige entre "}
+                        <span className={styles.underline}>diseños exclusivos</span>
+                        {" o "}
+                        <span className={styles.underline}>plantillas hermosas</span>
                     </p>
                 </div>
             </section>

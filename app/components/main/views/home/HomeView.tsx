@@ -11,11 +11,11 @@ import localFont from 'next/font/local';
 import Highlights from "@/app/components/main/views/home/Highlights";
 import Services from "@/app/components/main/views/home/Services";
 
-const OpenSans = localFont({ src: '/OpenSans-VariableFont_wdth,wght.ttf' })
+const Roboto = localFont({ src: '/Roboto-VariableFont_wdth,wght.ttf' })
 
 const HomeView = () => {
     return (
-        <div className={`${styles.container} ${OpenSans.className}`}>
+        <div className={`${styles.container} ${Roboto.className}`}>
             {/* Hero Section */}
             <Hero />
 

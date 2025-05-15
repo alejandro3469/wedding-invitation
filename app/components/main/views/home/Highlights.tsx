@@ -11,8 +11,7 @@ const Highlights = () => {
                 <div className={styles.textContainer}>
                     <p className={styles.bodytext}>
                         {
-                            "Share your ideas, photos, and drawings with us, " +
-                            "and we'll craft a website that reflects your unique love story."
+                            "Compartenos tus ideas, y nosotros las convertiremos en una página web llena de amor."
                         }
                     </p>
                     <div className={styles.button}>
@@ -22,8 +21,7 @@ const Highlights = () => {
                 <div className={styles.textContainer}>
                     <p className={styles.bodytext}>
                         {
-                            "Browse our collection of beautiful, " +
-                            "affordable templates and find the perfect match for your wedding"
+                            "Descubre plantillas preciosas y económicas para encontrar el estilo ideal de tu boda."
                         }
                     </p>
                     <div className={styles.button}>

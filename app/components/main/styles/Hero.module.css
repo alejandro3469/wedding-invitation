@@ -6,7 +6,8 @@
     width: calc(100vw);
     overflow-y: scroll;
     background-color: #f7f3eb;
-    color: #7a6f66;
+    color: #013220;
+    font-weight: 300;
 }
 .textContainer {
     position: relative;
@@ -23,16 +24,19 @@
 .overheader {
     font-size: 12px;
     text-transform: uppercase;
+    font-weight: 300;
 }
 .subheader {
     display: none;
 }
 .bodytext {
     width: 100%;
-    display: flex;
-    flex-direction: column;
     gap: 24px;
-    text-align: justify;
+}
+.underline {
+    background-color: #2D6B4D;
+    white-space: nowrap;
+    color: #f7f3eb;
 }
 .ovalWrapper {
     width: 100%;
@@ -57,11 +61,11 @@
 }
 
 .button {
-    background-color: #2a491f;
+    background-color: #2D6B4D;
     color: #f7f3eb;
     padding: 8px 16px;
     border-radius: 2px;
-    display: flex;
+    display: none;
     flex-direction: row;
     gap: 16px;
     align-items: center;
@@ -70,7 +74,7 @@
     cursor: pointer;
 }
 .dropdownsSection {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 0;
 }
