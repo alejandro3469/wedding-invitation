@@ -21,7 +21,7 @@ const Hero = () => {
                         {"Convertimos tus ideas en algo único y lleno de amor."}
                         <br/>
                         {"Elige entre "}
-                        <span className={styles.underline}>diseños exclusivos</span>
+                        <span className={styles.underline}>diseños personalizados</span>
                         {" o "}
                         <span className={styles.underline}>plantillas hermosas</span>
                     </p>
