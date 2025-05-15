@@ -21,7 +21,7 @@ const Hero = () => {
                         {"Elige entre "}
                         <span className={styles.underline}>diseños personalizados</span>
                         {" ó "}
-                        <span className={styles.underline}>plantillas hermosas</span>
+                        <span className={styles.underline}>plantillas hermosas.</span>
                     </p>
                 </div>
             </section>
