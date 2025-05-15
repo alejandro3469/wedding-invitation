@@ -29,7 +29,15 @@
     color: var(--green-dark);
     font-weight: 400;
 }
-
+.textContainer {
+    position: relative;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    line-height: var(--lh-normal);
+    z-index: 2;
+}
 .highlight {
     position: relative;
     display: flex;
@@ -157,10 +165,23 @@
         --fs-small: 0.95rem;    /* was 0.875 */
         --fs-base: 1.25rem;      /* was 1.125 */
     }
+    .textContainer {
+        padding: 0 4rem;
+    }
+
+    .button {
+        display: flex;
+    }
 }
 
 @media (min-width: 1200px) {
     .container {
         --fs-xl: 2.75rem;       /* was 2.5 */
+    }
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
     }
 }
