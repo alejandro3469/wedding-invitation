@@ -14,7 +14,7 @@ const Hero = () => {
             <section className={styles.container}>
                 <div className={styles.textContainer}>
                     <h3 className={styles.overheader}>HECHO A TU MEDIDA, ELEGANTE Y SIN COMPLICACIONES</h3>
-                    <h1 className={`${styles.header} ${anticDidone.className}`}>Crea la invitacion de boda de tus sueños</h1>
+                    <h1 className={`${styles.header} ${anticDidone.className}`}>Crea la invitación de boda de tus sueños</h1>
                     <h3 className={styles.subheader}>Subheader</h3>
 
                     <p className={styles.bodytext}>
@@ -22,7 +22,7 @@ const Hero = () => {
                         <br/>
                         {"Elige entre "}
                         <span className={styles.underline}>diseños personalizados</span>
-                        {" o "}
+                        {" ó "}
                         <span className={styles.underline}>plantillas hermosas</span>
                     </p>
                 </div>
