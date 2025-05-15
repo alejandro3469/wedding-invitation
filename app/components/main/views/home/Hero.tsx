@@ -18,8 +18,6 @@ const Hero = () => {
                     <h3 className={styles.subheader}>Subheader</h3>
 
                     <p className={styles.bodytext}>
-                        {"Convertimos tus ideas en algo único y lleno de amor."}
-                        <br/>
                         {"Elige entre "}
                         <span className={styles.underline}>diseños personalizados</span>
                         {" ó "}
