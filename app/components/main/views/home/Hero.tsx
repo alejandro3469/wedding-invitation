@@ -28,7 +28,7 @@ const Hero = () => {
             <section className={styles.container}>
                 <div className={styles.ovalWrapper}>
                     <Image
-                        src="/hero/jocelyn-allen-L4E-aN798wA-unsplash.jpg"
+                        src="/hero/original-437561e46cbe8ad33f2f3441b906e294.webp"
                         alt="Oval Image"
                         width={1200}
                         height={600}
