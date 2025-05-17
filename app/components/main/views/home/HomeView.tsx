@@ -11,6 +11,7 @@ import localFont from 'next/font/local';
 import Highlights from "@/app/components/main/views/home/Highlights";
 import Services from "@/app/components/main/views/home/Services";
 import Navigation from "@/app/components/main/views/home/Navigation";
+import Contact from "@/app/components/main/views/home/Contact";
 
 const Roboto = localFont({ src: '/Roboto-VariableFont_wdth,wght.ttf' })
 
@@ -24,6 +25,9 @@ const HomeView = () => {
             <Highlights />
             <div className={styles.line}></div>
             <Services />
+            <div className={styles.line}></div>
+            <Contact />
+            <div className={styles.line}></div>
 
             <div style={{"display": "none"}}>
                 {/* Highlights Section */}

@@ -9,11 +9,11 @@
   margin: 24px 0;
   width: 100%;
   height: 2px;
-  opacity: 0.4;
+  opacity: 0.08;
   background: repeating-linear-gradient(
           to right,
           transparent,
-          transparent 10px,
+          transparent 16px,
           #013220 16px,
           #013220 24px
   );
