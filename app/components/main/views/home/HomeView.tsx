@@ -10,15 +10,16 @@ import styles from '../../styles/HomeView.module.css';
 import localFont from 'next/font/local';
 import Highlights from "@/app/components/main/views/home/Highlights";
 import Services from "@/app/components/main/views/home/Services";
+import Navigation from "@/app/components/main/views/home/Navigation";
 
 const Roboto = localFont({ src: '/Roboto-VariableFont_wdth,wght.ttf' })
 
 const HomeView = () => {
     return (
         <div className={`${styles.container} ${Roboto.className}`}>
-            {/* Hero Section */}
-            <Hero />
 
+            <Navigation />
+            <Hero />
             <Highlights />
             <Services />
 

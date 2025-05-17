@@ -159,6 +159,43 @@
     display: none;
 }
 
+.navigationButton {
+    padding: 4px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+}
+.navigationButton svg{
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.3s ease;
+}
+.navigationButton svg:hover{
+    background-color: rgba(1, 50, 32, 0.3);
+}
+
+
+.cardTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    opacity: 0.6;
+}
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.vs {
+    font-weight: 600;
+    opacity: 0.6;
+    font-size: 24px;
+}
+
 /* ===== MEDIA QUERIES ===== */
 @media (min-width: 768px) {
     .container {
