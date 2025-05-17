@@ -20,7 +20,9 @@ const HomeView = () => {
 
             <Navigation />
             <Hero />
+            <div className={styles.line}></div>
             <Highlights />
+            <div className={styles.line}></div>
             <Services />
 
             <div style={{"display": "none"}}>

@@ -35,7 +35,7 @@ const Highlights = () => {
         <>
 
             <section className={styles.container} style={{marginBottom: "32px"}}>
-                <h3 className={styles.textContainer}>Services</h3>
+                <h3 className={`${styles.textContainer} ${styles.sectionTitle}`}>Servicios</h3>
                 <div className={styles.dropdownsSection}>
                     <div className={styles.dropdownContainer}>
                         <h5 className={`${styles.dropdownTitle}`} onClick={() => toggleOpen("templates")}>

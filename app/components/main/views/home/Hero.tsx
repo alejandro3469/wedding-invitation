@@ -10,7 +10,7 @@ const anticDidone = localFont({ src: '/AnticDidone-Regular.ttf' })
 
 const Hero = () => {
     return (
-        <>
+        <div className={styles.sectionContainer}>
             <section className={styles.container}>
                 <div className={styles.textContainer}>
                     <h3 className={styles.overheader}>HECHO A TU MEDIDA, ELEGANTE Y SIN COMPLICACIONES</h3>
@@ -36,7 +36,7 @@ const Hero = () => {
                     />
                 </div>
             </section>
-        </>
+        </div>
     );
 };
 
