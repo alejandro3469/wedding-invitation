@@ -183,7 +183,7 @@
     align-items: center;
     gap: 8px;
     font-weight: 600;
-    opacity: 0.6;
+    color: var(--green-medium);
 }
 .cardContainer {
     display: flex;
@@ -192,7 +192,7 @@
 }
 .vs {
     font-weight: 600;
-    opacity: 0.6;
+    color: var(--green-medium);
     font-size: 24px;
 }
 
