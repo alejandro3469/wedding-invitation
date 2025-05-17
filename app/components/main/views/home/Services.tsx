@@ -4,6 +4,37 @@ import React from 'react';
 import styles from '../../styles/Hero.module.css';
 import { useState } from 'react';
 
+import {
+    Table,
+    TableBody,
+    TableCell,
+    TableContainer,
+    TableHead,
+    TableRow,
+    Paper,
+    styled,
+} from '@mui/material';
+
+// Custom styled cells
+const TopHeaderCell = styled(TableCell)(({ theme }) => ({
+    backgroundColor: 'rgba(1, 50, 32, 0.3);',
+    fontSize: '1.1rem',
+    fontWeight: 'bold',
+    padding: '12px 16px',
+}));
+
+const LeftHeaderCell = styled(TableCell)(({ theme }) => ({
+    backgroundColor: 'rgba(1, 50, 32, 0.3);',
+    fontSize: '1rem',
+    fontWeight: 'bold',
+    position: 'sticky',
+    left: 0,
+    zIndex: 1,
+}));
+
+const DataCell = styled(TableCell)({
+    padding: '8px 16px',
+});
 
 const Highlights = () => {
     const [isTemplatesOpen, setIsTemplatesOpen] = useState(false);
@@ -30,12 +61,80 @@ const Highlights = () => {
         }
     };
 
+    const columns = ['Product', 'Titulo del plan #1', 'Titulo del plan #2'];
+    const rows = [
+        {
+            name: 'Feature #1',
+            q1: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     className="lucide lucide-check-icon lucide-check">
+                <path d="M20 6 9 17l-5-5"/>
+            </svg>,
+            q2: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     className="lucide lucide-check-icon lucide-check">
+                <path d="M20 6 9 17l-5-5"/>
+            </svg>
+        },
+        {
+            name: 'Feature #2',
+            q1: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     className="lucide lucide-check-icon lucide-check">
+                <path d="M20 6 9 17l-5-5"/>
+            </svg>,
+            q2: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     className="lucide lucide-check-icon lucide-check">
+                <path d="M20 6 9 17l-5-5"/>
+            </svg>
+        },
+        {
+            name: 'Feature #3',
+            q1: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     className="lucide lucide-check-icon lucide-check">
+                <path d="M20 6 9 17l-5-5"/>
+            </svg>,
+            q2: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     className="lucide lucide-check-icon lucide-check">
+                <path d="M20 6 9 17l-5-5"/>
+            </svg>
+        },
+    ];
+
 
     return (
-        <>
+        <div className={styles.textContainer}>
 
             <section className={styles.container} style={{marginBottom: "32px"}}>
                 <h3 className={`${styles.textContainer} ${styles.sectionTitle}`}>Servicios</h3>
+                <TableContainer component={Paper} sx={{ maxHeight: 400, overflow: 'auto' }}>
+                    <Table stickyHeader aria-label="two-header table">
+                        {/* TOP HEADER */}
+                        <TableHead>
+                            <TableRow>
+                                <TopHeaderCell></TopHeaderCell>
+                                {columns.slice(1).map((col) => (
+                                    <TopHeaderCell key={col}>{col}</TopHeaderCell>
+                                ))}
+                            </TableRow>
+                        </TableHead>
+
+                        {/* TABLE BODY + LEFT HEADER */}
+                        <TableBody>
+                            {rows.map((row) => (
+                                <TableRow key={row.name}>
+                                    <LeftHeaderCell>{row.name}</LeftHeaderCell>
+                                    <DataCell>{row.q1}</DataCell>
+                                    <DataCell>{row.q2}</DataCell>
+                                </TableRow>
+                            ))}
+                        </TableBody>
+                    </Table>
+                </TableContainer>
+
                 <div className={styles.dropdownsSection}>
                     <div className={styles.dropdownContainer}>
                         <h5 className={`${styles.dropdownTitle}`} onClick={() => toggleOpen("templates")}>
@@ -253,7 +352,7 @@ const Highlights = () => {
                     </div>
                 </div>
             </section>
-        </>
+        </div>
     );
 };
 
