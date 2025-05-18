@@ -18,8 +18,8 @@ import {
 const TopHeaderCell = styled(TableCell)(({ theme }) => ({
     backgroundColor: '#f7f3eb',
     padding: '12px',
-    borderBottom: '2px solid #e8e0d5',
-    borderRight: '1px solid #e8e0d5',
+    borderBottom: '2px solid #b0a695',
+    borderRight: '1px solid #b0a695',
     whiteSpace: 'nowrap',
     color: '#333',
     textAlign: 'center',
@@ -56,8 +56,8 @@ const LeftHeaderCell = styled(TableCell)(({ theme }) => ({
     fontSize: '0.9rem',
     fontWeight: '500',
     padding: '8px 12px',
-    borderRight: '1px solid #e8e0d5',
-    borderBottom: '1px solid #e8e0d5',
+    borderRight: '1px solid #b0a695',
+    borderBottom: '1px solid #b0a695',
     position: 'sticky',
     left: 0,
     zIndex: 2,
@@ -71,8 +71,8 @@ const LeftHeaderCell = styled(TableCell)(({ theme }) => ({
 const DataCell = styled(TableCell)(({ theme }) => ({
     padding: '8px 12px',
     fontSize: '0.9rem',
-    borderBottom: '1px solid #e8e0d5',
-    borderRight: '1px solid #e8e0d5',
+    borderBottom: '1px solid #b0a695',
+    borderRight: '1px solid #b0a695',
     textAlign: 'center',
     backgroundColor: 'rgba(232,224,213,0.02)',
     '& svg': {
@@ -192,7 +192,7 @@ const Highlights = () => {
                                     maxWidth: '100%',
                                     overflowX: 'auto',
                                     boxShadow: 'none',
-                                    border: '1px solid #e8e0d5',
+                                    border: '1px solid #b0a695',
                                     borderRadius: '8px',
                                     mb: 3,
                                     backgroundColor: '#f7f3eb'
