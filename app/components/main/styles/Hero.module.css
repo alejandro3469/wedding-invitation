@@ -31,7 +31,7 @@
 }
 .containerDark {
     /* Dark mode color palette */
-    --dark-bg: #cac7c0; /* Deep dark background */
+    --dark-bg: rgba(202, 199, 192, 0.4); /* Deep dark background */
     --dark-surface: #1E1E1E; /* Slightly lighter surface */
     --dark-primary: #4CAF50; /* Vibrant green for primary elements */
     --dark-secondary: #81C784; /* Softer green for secondary elements */
