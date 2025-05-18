@@ -186,7 +186,7 @@ const Highlights = () => {
         <div className={styles.textContainer}>
 
             <section className={styles.container} style={{marginBottom: "32px"}}>
-                <h3 className={`${styles.sectionTitle}`}>Servicios</h3>
+                <h3 className={`${styles.sectionTitle}`}>Servicios y precios</h3>
                 <TableContainer component={Paper}
                                 sx={{
                                     maxWidth: '100%',
