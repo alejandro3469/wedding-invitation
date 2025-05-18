@@ -74,7 +74,7 @@ const DataCell = styled(TableCell)(({ theme }) => ({
     borderBottom: '1px solid #e8e0d5',
     borderRight: '1px solid #e8e0d5',
     textAlign: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: 'rgba(232,224,213,0.02)',
     '& svg': {
         width: '20px',
         height: '20px',
