@@ -31,11 +31,11 @@
 }
 .containerDark {
     /* Dark mode color palette */
-    --dark-bg: #013220; /* Deep dark background */
+    --dark-bg: #cac7c0; /* Deep dark background */
     --dark-surface: #1E1E1E; /* Slightly lighter surface */
     --dark-primary: #4CAF50; /* Vibrant green for primary elements */
     --dark-secondary: #81C784; /* Softer green for secondary elements */
-    --dark-text: #E0E0E0; /* Light text for readability */
+    --dark-text: #013220; /* Light text for readability */
     --dark-text-secondary: #9E9E9E; /* Secondary text */
     --dark-border: #424242; /* Subtle borders */
 
@@ -52,6 +52,7 @@
     /* Optional: Slightly reduce font weights in dark mode */
     font-weight: 300;
     padding: 32px 0;
+
 }
 
 .sectionContainer {
@@ -213,6 +214,7 @@
     align-items: center;
     gap: 8px;
     font-weight: 600;
+    opacity: 0.8;
 }
 .cardContainer {
     display: flex;

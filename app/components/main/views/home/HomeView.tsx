@@ -21,11 +21,13 @@ const HomeView = () => {
 
             <Navigation />
             <Hero />
-            <Highlights />
+            <div className={styles.line}></div>
             <Services />
+            <Highlights />
             <div className={styles.line}></div>
             <Contact />
             <div className={styles.line}></div>
+
 
             <div style={{"display": "none"}}>
                 {/* Highlights Section */}
