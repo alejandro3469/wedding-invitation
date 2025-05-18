@@ -21,9 +21,7 @@ const HomeView = () => {
 
             <Navigation />
             <Hero />
-            <div className={styles.line}></div>
             <Highlights />
-            <div className={styles.line}></div>
             <Services />
             <div className={styles.line}></div>
             <Contact />
