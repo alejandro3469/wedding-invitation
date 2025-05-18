@@ -12,6 +12,7 @@ import Highlights from "@/app/components/main/views/home/Highlights";
 import Services from "@/app/components/main/views/home/Services";
 import Navigation from "@/app/components/main/views/home/Navigation";
 import Contact from "@/app/components/main/views/home/Contact";
+import Footer from "@/app/components/main/views/home/Footer";
 
 const Roboto = localFont({ src: '/Roboto-VariableFont_wdth,wght.ttf' })
 
@@ -27,6 +28,7 @@ const HomeView = () => {
             <div className={styles.line}></div>
             <Contact />
             <div className={styles.line}></div>
+            <Footer />
 
 
             <div style={{"display": "none"}}>

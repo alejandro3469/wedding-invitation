@@ -50,7 +50,7 @@
     --black-transparent: rgba(255, 255, 255, 0.05);
 
     /* Optional: Slightly reduce font weights in dark mode */
-    font-weight: 300;
+    font-weight: 400;
     padding: 32px 0;
 
 }
@@ -214,7 +214,6 @@
     align-items: center;
     gap: 8px;
     font-weight: 600;
-    opacity: 0.8;
 }
 .cardContainer {
     display: flex;
@@ -225,9 +224,59 @@
     font-weight: 600;
     font-size: 24px;
 }
+.vs2 {
+    font-size: 18px;
+}
 
 .sectionTitle {
     text-transform: uppercase;
+}
+
+
+.footer {
+    background-color: var(--cream);
+    padding: 2rem 0;
+}
+
+.footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.socialLinks a {
+    color: var(--green-dark);
+    transition: color 0.3s ease;
+}
+
+.socialLinks a:hover {
+    color: var(--green-medium);
+}
+
+.footerText {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--green-dark);
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.footerText p {
+    margin: 0.25rem 0;
+}
+
+@media (max-width: 768px) {
+    .footerContent {
+        padding: 0 1rem;
+    }
 }
 
 /* ===== MEDIA QUERIES ===== */
