@@ -2,7 +2,7 @@
 .container {
     /* Define all variables under a local class */
     --green-dark: #013220;
-    --green-medium: #2D6B4D;
+        --green-medium: #2D6B4D;
     --cream: #f7f3eb;
     --black-transparent: rgba(0, 0, 0, 0.1);
 

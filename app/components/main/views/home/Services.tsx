@@ -12,29 +12,82 @@ import {
     TableHead,
     TableRow,
     Paper,
-    styled,
+    styled, Box
 } from '@mui/material';
 
-// Custom styled cells
 const TopHeaderCell = styled(TableCell)(({ theme }) => ({
-    backgroundColor: 'rgba(1, 50, 32, 0.3);',
-    fontSize: '1.1rem',
-    fontWeight: 'bold',
-    padding: '12px 16px',
+    backgroundColor: '#f7f3eb',
+    padding: '12px',
+    borderBottom: '2px solid #e8e0d5',
+    borderRight: '1px solid #e8e0d5',
+    whiteSpace: 'nowrap',
+    color: '#333',
+    textAlign: 'center',
+    [theme.breakpoints.down('sm')]: {
+        padding: '8px',
+    },
 }));
+
+const PlanHeader = styled('div')({
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+});
+
+const PlanName = styled('div')({
+    fontSize: '0.9rem',
+    fontWeight: '600',
+    marginBottom: '4px',
+});
+
+const PlanPrice = styled('div')({
+    fontSize: '1.5rem',
+    fontWeight: '700',
+    marginBottom: '4px',
+});
+
+const PlanTerm = styled('div')({
+    fontSize: '0.8rem',
+    fontStyle: 'italic',
+});
 
 const LeftHeaderCell = styled(TableCell)(({ theme }) => ({
-    backgroundColor: 'rgba(1, 50, 32, 0.3);',
-    fontSize: '1rem',
-    fontWeight: 'bold',
+    backgroundColor: '#f7f3eb',
+    fontSize: '0.9rem',
+    fontWeight: '500',
+    padding: '8px 12px',
+    borderRight: '1px solid #e8e0d5',
+    borderBottom: '1px solid #e8e0d5',
     position: 'sticky',
     left: 0,
-    zIndex: 1,
+    zIndex: 2,
+    color: '#333',
+    [theme.breakpoints.down('sm')]: {
+        fontSize: '0.8rem',
+        padding: '6px 8px',
+    },
 }));
 
-const DataCell = styled(TableCell)({
-    padding: '8px 16px',
-});
+const DataCell = styled(TableCell)(({ theme }) => ({
+    padding: '8px 12px',
+    fontSize: '0.9rem',
+    borderBottom: '1px solid #e8e0d5',
+    borderRight: '1px solid #e8e0d5',
+    textAlign: 'center',
+    backgroundColor: '#fff',
+    '& svg': {
+        width: '20px',
+        height: '20px',
+    },
+    [theme.breakpoints.down('sm')]: {
+        padding: '6px 8px',
+        fontSize: '0.8rem',
+        '& svg': {
+            width: '18px',
+            height: '18px',
+        },
+    },
+}));
 
 const Highlights = () => {
     const [isTemplatesOpen, setIsTemplatesOpen] = useState(false);
@@ -61,46 +114,70 @@ const Highlights = () => {
         }
     };
 
-    const columns = ['Product', 'Titulo del plan #1', 'Titulo del plan #2'];
+    const CheckIcon = ({ limited = false }) => (
+        <Box
+            component="span"
+            sx={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                backgroundColor: 'rgba(45, 107, 77, 0.15)',
+                borderRadius: '50%',
+                width: '24px',
+                height: '24px',
+                padding: '2px'
+            }}
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                 stroke="#2D6B4D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M20 6 9 17l-5-5"/>
+            </svg>
+        </Box>
+    );
+    const XIcon = () => (
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M18 6 6 18"/>
+            <path d="m6 6 12 12"/>
+        </svg>
+    );
+
+    const columns = ['', 'Plantilla', 'Custom'];
     const rows = [
         {
-            name: 'Feature #1',
-            q1: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                     className="lucide lucide-check-icon lucide-check">
-                <path d="M20 6 9 17l-5-5"/>
-            </svg>,
-            q2: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                     className="lucide lucide-check-icon lucide-check">
-                <path d="M20 6 9 17l-5-5"/>
-            </svg>
+            name: 'Diseño 100% personalizado',
+            q1: <CheckIcon />,
+            q2: <CheckIcon />,
         },
         {
-            name: 'Feature #2',
-            q1: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                     className="lucide lucide-check-icon lucide-check">
-                <path d="M20 6 9 17l-5-5"/>
-            </svg>,
-            q2: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                     className="lucide lucide-check-icon lucide-check">
-                <path d="M20 6 9 17l-5-5"/>
-            </svg>
+            name: 'Revisiones ilimitadas',
+            q1: <CheckIcon />,
+            q2: <CheckIcon />,
         },
         {
-            name: 'Feature #3',
-            q1: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                     className="lucide lucide-check-icon lucide-check">
-                <path d="M20 6 9 17l-5-5"/>
-            </svg>,
-            q2: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                     className="lucide lucide-check-icon lucide-check">
-                <path d="M20 6 9 17l-5-5"/>
-            </svg>
+            name: 'Diseñador dedicado',
+            q1: <XIcon />,
+            q2: <CheckIcon />,
+        },
+        {
+            name: 'Materiales premium',
+            q1: <XIcon />,
+            q2: <CheckIcon />,
+        },
+        {
+            name: 'Entrega rápida (48hrs)',
+            q1: <CheckIcon />,
+            q2: <XIcon />,
+        },
+        {
+            name: 'Secciones personalizables',
+            q1: <XIcon />,
+            q2: <CheckIcon />,
+        },
+        {
+            name: 'Elementos interactivos',
+            q1: <XIcon />,
+            q2: <CheckIcon />,
         },
     ];
 
@@ -109,16 +186,44 @@ const Highlights = () => {
         <div className={styles.textContainer}>
 
             <section className={styles.container} style={{marginBottom: "32px"}}>
-                <h3 className={`${styles.textContainer} ${styles.sectionTitle}`}>Servicios</h3>
-                <TableContainer component={Paper} sx={{ maxHeight: 400, overflow: 'auto' }}>
-                    <Table stickyHeader aria-label="two-header table">
+                <h3 className={`${styles.sectionTitle}`}>Servicios</h3>
+                <TableContainer component={Paper}
+                                sx={{
+                                    maxWidth: '100%',
+                                    overflowX: 'auto',
+                                    boxShadow: 'none',
+                                    border: '1px solid #e8e0d5',
+                                    borderRadius: '8px',
+                                    mb: 3,
+                                    backgroundColor: '#f7f3eb'
+                                }}>
+                    <Table stickyHeader
+                           aria-label="comparison table"
+                           sx={{
+                               minWidth: '400px',
+                               '& .MuiTableCell-root': {
+                                   boxSizing: 'border-box'
+                               },
+                               '& .MuiTableRow-root:last-child .MuiTableCell-root': {
+                                   borderBottom: 'none'
+                               }
+                           }}>
                         {/* TOP HEADER */}
                         <TableHead>
                             <TableRow>
                                 <TopHeaderCell></TopHeaderCell>
-                                {columns.slice(1).map((col) => (
-                                    <TopHeaderCell key={col}>{col}</TopHeaderCell>
-                                ))}
+                                <TopHeaderCell>
+                                    <PlanHeader>
+                                        <PlanName>Plantilla</PlanName>
+                                        <PlanPrice>$199 MXN</PlanPrice>
+                                    </PlanHeader>
+                                </TopHeaderCell>
+                                <TopHeaderCell>
+                                    <PlanHeader>
+                                        <PlanName>Custom</PlanName>
+                                        <PlanPrice>$599 MXN</PlanPrice>
+                                    </PlanHeader>
+                                </TopHeaderCell>
                             </TableRow>
                         </TableHead>
 
