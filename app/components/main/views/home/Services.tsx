@@ -145,29 +145,24 @@ const Highlights = () => {
     const columns = ['', 'Plantilla', 'Custom'];
     const rows = [
         {
-            name: 'Diseño 100% personalizado',
-            q1: <CheckIcon />,
-            q2: <CheckIcon />,
-        },
-        {
-            name: 'Revisiones ilimitadas',
-            q1: <CheckIcon />,
-            q2: <CheckIcon />,
-        },
-        {
-            name: 'Diseñador dedicado',
-            q1: <XIcon />,
-            q2: <CheckIcon />,
-        },
-        {
-            name: 'Materiales premium',
-            q1: <XIcon />,
-            q2: <CheckIcon />,
-        },
-        {
-            name: 'Entrega rápida (48hrs)',
+            name: 'Entrega inmediata (24hrs)',
             q1: <CheckIcon />,
             q2: <XIcon />,
+        },
+        {
+            name: 'Nombres en URL',
+            q1: <CheckIcon />,
+            q2: <CheckIcon />,
+        },
+        {
+            name: 'Texto 100% personalizado',
+            q1: <CheckIcon />,
+            q2: <CheckIcon />,
+        },
+        {
+            name: 'Diseño 100% personalizado',
+            q1: <XIcon />,
+            q2: <CheckIcon />,
         },
         {
             name: 'Secciones personalizables',
