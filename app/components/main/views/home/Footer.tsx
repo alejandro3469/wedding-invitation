@@ -24,8 +24,7 @@ const Footer = () => {
 
                 <div className={styles.footerText}>
                     <p>Celebrando el amor desde 2025</p>
-                    <p>info@bodasdream.com | Tel: +52 55 1234 5678</p>
-                    <p>© {new Date().getFullYear()} Invitaciones Digitales. Todos los derechos reservados.</p>
+                    <p>© {new Date().getFullYear()} Leleupiinvite. Todos los derechos reservados.</p>
                 </div>
             </div>
         </footer>
