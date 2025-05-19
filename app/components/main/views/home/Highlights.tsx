@@ -7,7 +7,7 @@ import Image from 'next/image'
 const Highlights = () => {
     return (
         <>
-            <section className={`${styles.container} ${styles.containerDark}`}>
+            <section className={`${styles.container}`}>
                 <div className={`${styles.textContainer} ${styles.cardContainer}`}>
                     <p className={`${styles.bodytext} ${styles.cardTitle}`}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"

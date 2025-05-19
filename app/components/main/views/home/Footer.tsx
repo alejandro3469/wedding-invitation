@@ -3,7 +3,7 @@ import styles from '../../styles/Hero.module.css';
 
 const Footer = () => {
     return (
-        <footer className={styles.footer}>
+        <footer className={`${styles.footer} ${styles.containerDark}`}>
             <div className={styles.footerContent}>
                 <div className={styles.socialLinks}>
                     <a href="https://instagram.com" aria-label="Instagram">

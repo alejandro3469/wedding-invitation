@@ -44,9 +44,8 @@
     color: var(--dark-text);
 
     /* Dark mode specific adjustments */
-    --green-dark: var(--dark-primary);
-    --green-medium: var(--dark-secondary);
-    --cream: var(--dark-surface);
+    --green-dark: var(--dark-text);
+    --cream: var(--dark-bg);
     --black-transparent: rgba(255, 255, 255, 0.05);
 
     /* Optional: Slightly reduce font weights in dark mode */
