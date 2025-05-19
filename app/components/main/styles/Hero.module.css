@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* ===== CSS MODULE COMPATIBLE VARIABLES ===== */
 .container {
     /* Define all variables under a local class */
@@ -28,6 +30,18 @@
     background-color: var(--cream);
     color: var(--green-dark);
     font-weight: 400;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    letter-spacing: 1.6px;
+    align-items: center;
+    padding: 16px 0;
+    font-family: "Nunito", sans-serif;
+}
+.bold {
+    font-weight: bold;
 }
 .containerDark {
     /* Dark mode color palette */
