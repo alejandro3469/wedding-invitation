@@ -3,7 +3,6 @@
 import React from 'react';
 import styles from '../../styles/Hero.module.css';
 import Image from 'next/image'
-
 import localFont from 'next/font/local';
 import {display} from "@mui/system";
 
@@ -15,7 +14,7 @@ const Hero = () => {
             <div className={styles.textContainer}>
                 <div className={`${styles.logo}`}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         stroke="currentColor" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"
                          className="lucide lucide-fish-icon lucide-fish">
                         <path d="M6.5 12c.94-3.46 4.94-6 8.5-6 3.56 0 6.06 2.54 7 6-.94 3.47-3.44 6-7 6s-7.56-2.53-8.5-6Z"/>
                         <path d="M18 12v.5"/>
