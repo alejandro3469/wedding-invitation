@@ -99,6 +99,16 @@
     font-size: var(--fs-base);
     line-height: var(--lh-normal);
 }
+.TextPlusIcon {
+    width: 100%;
+    gap: 32px;
+    font-size: var(--fs-base);
+    line-height: var(--lh-normal);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
 
 .underline {
     background-color: var(--green-medium);
