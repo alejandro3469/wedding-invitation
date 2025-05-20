@@ -2,9 +2,6 @@
 
 import React, { useState } from 'react';
 import styles from '../../styles/Hero.module.css';
-import localFont from 'next/font/local';
-
-const anticDidone = localFont({ src: '/AnticDidone-Regular.ttf' });
 
 const Navigation = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,7 +30,7 @@ const Navigation = () => {
 
             {/* Full-page menu overlay */}
             <div className={`${styles.menuOverlay} ${isMenuOpen ? styles.menuOpen : ''}`}>
-                <nav className={`${styles.menuContent} ${anticDidone.className}`}>
+                <nav className={`${styles.menuContent}`}>
                     <a href="/" className={styles.menuItem} onClick={() => setIsMenuOpen(false)}>Home</a>
                     <a href="/#" className={styles.menuItem} onClick={() => setIsMenuOpen(false)}>About</a>
                     <a href="/#" className={styles.menuItem} onClick={() => setIsMenuOpen(false)}>Services</a>
