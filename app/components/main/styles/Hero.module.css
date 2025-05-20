@@ -230,8 +230,46 @@
 .navigationButton svg:hover{
     background-color: rgba(1, 50, 32, 0.3);
 }
+/* Menu overlay styles */
+.menuOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f3eb;
+    z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
 
+.menuOverlay.menuOpen {
+    opacity: 1;
+    visibility: visible;
+}
 
+/* Menu content styles */
+.menuContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 2rem;
+}
+
+.menuItem {
+    font-size: 1.5rem;
+    color: #2D6B4D;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding: 0.5rem 1rem;
+}
+
+.menuItem:hover {
+    color: #013220;
+}
 .cardTitle {
     display: flex;
     flex-direction: row;
