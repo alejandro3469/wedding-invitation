@@ -328,13 +328,13 @@ const Banner = () => {
                         }
                     </p>
                     <div className={styles.subcontainer}>
-                        <div onClick={sendWhatsAppMessage("+526561447889")} className={`${styles.normal} ${styles.button}`}>
+                        <div onClick={sendWhatsAppMessage("+525630008517")} className={`${styles.normal} ${styles.button}`}>
                             {
                                 "Confirmar a Cristian"
                             }
                         </div>
 
-                        <div onClick={sendWhatsAppMessage("+5216567496746")} className={`${styles.normal} ${styles.button}`}>
+                        <div onClick={sendWhatsAppMessage("+525627641178")} className={`${styles.normal} ${styles.button}`}>
                             {
                                 "Confirmar a Vanessa"
                             }
